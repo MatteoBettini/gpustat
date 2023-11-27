@@ -240,7 +240,7 @@ class GPUStat:
         colors['CMemT'] = _conditional(lambda: self.available, term.yellow, term.bold_black)
         colors['CMemP'] = term.yellow
         colors['CCPUMemU'] = term.yellow
-        colors['CUser'] = term.bold_black   # gray
+        colors['CUser'] = term.bold_gray   # gray
         colors['CUtil'] = _conditional(lambda: self.utilization < 30, term.green, term.bold_green)
         colors['CUtilEnc'] = _conditional(
             lambda: self.utilization_enc < _ENC_THRESHOLD,
